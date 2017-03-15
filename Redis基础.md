@@ -137,8 +137,8 @@ redis 127.0.0.1:6379> lrange runoob 0 10
 ### Set
 Redis的Set是String类型的无序集合。
 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。
-
 **sadd命令**
+
 添加一个String元素，key对应的set集合中，成功返回1，如果元素已经在集合中返回0，key对应的set不存在返回错误。
 ```
 sadd key member
@@ -164,7 +164,9 @@ redis 127.0.0.1:6379> smembers runooob
 Redis zset和Set一样也是String类型元素的集合，且不允许重复的成员。
 不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。
 zset的成员的唯一的，但分数(score)却可以重复。
+
 **zadd命令**
+
 添加一个String元素，key对应的set集合中，成功返回1，如果元素已经在集合中返回0，key对应的set不存在返回错误。
 ```
 sadd key member
