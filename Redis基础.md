@@ -137,6 +137,7 @@ redis 127.0.0.1:6379> lrange runoob 0 10
 ### Set
 Redis的Set是String类型的无序集合。
 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。
+
 **sadd命令**
 
 添加一个String元素，key对应的set集合中，成功返回1，如果元素已经在集合中返回0，key对应的set不存在返回错误。
