@@ -56,6 +56,7 @@ redis> get foo
 Redis的配置文件位于Redis安装目录下，文件名为redis.conf。
 可以使用CONFIG命令查看或设置配置项。
 **语法**
+
 **Redis CONFIG命令格式如下：**
 ```
 redis 127.0.0.1:6379> CONFIG GET CONFIG_SETTING_NAME
@@ -91,6 +92,7 @@ Redis支持五种数据类型：String,hash,list,set,zset(sorted set)。
 String是redis最基本的类型，一个key对应一个value。
 String类型是二进制安全的。意思是redis的String可以包含任何数据。比如jpg图片或者序列化的对象。
 String类型是Redis最基本的数据类型，一个键最大能存储512MB。
+
 **实例**
 ```
 redis 127.0.0.1:6379> SET name "runoob"
@@ -117,6 +119,7 @@ redis 127.0.0.1:6379> HGETALL user:1
 每个hash可以存储2^(32) - 1键值对(40多亿)。
 ### List
 Redis列表是简单的字符串列表，按照插入顺序排序。可以添加一个元素到列表的头部(左边)或者尾部(右边)。
+
 **实例**
 ```
 redis 127.0.0.1:6379> lpush runoob redis
