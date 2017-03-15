@@ -1,4 +1,5 @@
 #Redis
+
 Redis是一个key-value存储系统。
 C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化的日志型、key-value数据库、并提供多种语言的API。
 它通常被称为数据结构服务器，因为值(value)可以是字符串(String)，哈希(Map)，列表(list)，集合(sets)和有序集合(sorted sets)等类型。
@@ -8,6 +9,7 @@ C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化�
 - 支持数据的持久化
 - 支持多种数据结构存储
 - 支持master-slave模式的数据备份
+
 ###优势
 - 性能极高，读的速度都是110000次/s，写的速度为81000次/s。
 - 数据类型丰富
@@ -22,7 +24,9 @@ C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化�
 运行**redis-cli -h 127.0.0.1 -p 6379**
 设置键值对 **set myKey abc**
 取出键值对 **get myKey**
+
 ###Linux下安装
+
 **下载地址：**[http://redis.io/download](http://redis.io/download)
 以2.8.17版本为例，下载并安装：
 ```
