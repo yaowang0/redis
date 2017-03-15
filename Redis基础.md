@@ -55,6 +55,7 @@ redis> get foo
 ## Redis配置
 Redis的配置文件位于Redis安装目录下，文件名为redis.conf。
 可以使用CONFIG命令查看或设置配置项。
+
 **语法**
 
 **Redis CONFIG命令格式如下：**
@@ -71,6 +72,7 @@ redis 127.0.0.1:6379> CONFIG GET *
 ``` 
 ### 编辑配置
 可以通过修改redis.conf文件或者使用CONFIG set 命令来修改配置。
+
 **语法**
 CONFIG SET命令基本语法：
 ```
@@ -103,6 +105,7 @@ redis 127.0.0.1:6379> GET name
 ### Hash
 Redis hash是一个键值对集合。
 Redis hash是一个String类型的field和value的映射表，hash特别适合用于存储对象。
+
 **实例**
 ```
 redis 127.0.0.1:6379> HMSET user:1 username runoob password runoob points 200
@@ -134,6 +137,7 @@ redis 127.0.0.1:6379> lrange runoob 0 10
 ### Set
 Redis的Set是String类型的无序集合。
 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。
+
 **sadd命令**
 添加一个String元素，key对应的set集合中，成功返回1，如果元素已经在集合中返回0，key对应的set不存在返回错误。
 ```
