@@ -12,12 +12,17 @@ Redis拥有两种不同形式的持久化方法，它们都可以用小而紧凑
 
 ## 1.2 Redis数据结构
 - String 
+
 SET、GET、DEL
 - List
+
 LPUSH、LRANGE、LINDEX(获取列表在给定位置上的单个元素)
 - SET
+
 SADD、SMEMBERS
 - Hash
+
 HMSET、HGETALL
 - ZSET
+
 ZADD、 ZRANGE
